@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Designing forms for gender diversity and inclusion",
+        "subtitle": "A little question is a big deal when it comes to shaping people’s experience with your product. How do we ask people for their gender in a thoughtful and respectful way?",
+        "author": "Sabrina Fonseca",
+        "date": "Apr 25, 2017",
+        "timeToRead": "12 min read",
+        "body": "I started thinking about writing about gender diversity in design when I noticed how Facebook, Google+, OkCupid, Tinder and a few others have adapted their registration forms to be more inclusive of trans and gender non-conforming (GNC) people. Why isn’t everyone doing this, I thought? Asking for a person’s gender is a loaded question and there can be many answers to it. It’s easy for us designers to just slap a gender question that says Male/Female in there — and make it mandatory — because our marketing department needs that data to sell stuff. There are indications that this not only risks losing engagement but also leads to false conclusions based on bad data. The J. Walter Thompson Innovation Group discovered that...",
+        "tags": ["inclusion", "GNC", "gender", "social media"],
+        "likes": 234
+    },
+    {
+        "id": 2,
+        "title": "Dumping Kids with IEPs into General Education Classrooms is not Inclusion",
+        "subtitle": "",
+        "author": "Laura J. Murphy, MFA",
+        "date": "Nov 14, 2019",
+        "timeToRead": "4 min read",
+        "body": "I can’t believe it's November already — time for the first round of parent-teacher conferences for Kindergarten. It brought me back to memories of last year’s conference. Pre-k 4 was so different. It was a true inclusion class run by a special education teacher and the classroom provided a lot of support and individual interventions for all of the students which set the bar of expectations high for me as a parent.",
+        "tags": ["children", "special education", "inclusion"],
+        "likes": 52
+    },
+    {
+        "id": 3,
+        "title": "“Inclusion” is not for outsiders",
+        "subtitle": "",
+        "author": "Laura J. Murphy, MFA",
+        "date": "Apr 26, 2017",
+        "timeToRead": "14 min read",
+        "body": "I was born into being what I can only describe as an outsider. My life started in England, about an hour east of London in a small town called Braintree. As the youngest of three, I came along during a time of relative turmoil for the family. My father, a serviceman in the US Air Force met my mother, Ann, thirteen years earlier at a social mixer/dance in Hammersmith, London. The year was 1962. My mother was in nursing school at the time and Edward (my father) was stationed at a now-defunct Cold War base, RAF Ruislip in West London. They eventually married about one year after that dance, and my brother was born not long after that.",
+        "tags": ["inclusion", "outsiders"],
+        "likes": 23
+    },
+    {
+        "id": 4,
+        "title": "Honest Diversity in Tech Report",
+        "subtitle": "The Most Accurate Diversity in Tech Report You Will Ever Read",
+        "author": "Sarah Cooper",
+        "date": "Nov 15, 2016",
+        "timeToRead": "3 min read",
+        "body": "In the interest of transparency and mounting pressure from other companies doing it, we are very excited to release our Annual Diversity in Tech Report and share all the gains we’ve made in hiring “other people”..",
+        "tags": ["diversity", "tech"],
+        "likes": 700
+    }
+]
