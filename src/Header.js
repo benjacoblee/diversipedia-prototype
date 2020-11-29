@@ -5,7 +5,7 @@ import { BsBell, BsSearch } from "react-icons/bs";
 
 const Header = () => {
     return (
-        <nav className="w-full p-6 bg-gray-100  rounded-lg shadow-xl">
+        <nav className="w-auto p-6 bg-gray-100 rounded-lg shadow-xl">
             <div className="flex flex-row justify-between items-center">
                 <div className="ml-6 pt-1">
                     <Link to="/">
@@ -23,7 +23,7 @@ const Header = () => {
                     </Link>
                     <BsBell className="text-2xl mr-5 text-gray-700" />
                     <img
-                        className="w-12"
+                        className="w-12 sm:hidden"
                         src="https://www.searchpng.com/wp-content/uploads/2019/02/Profile-ICon.png"
                         alt=""
                     />

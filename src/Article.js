@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
     FaRegShareSquare,
     FaRegBookmark,
@@ -14,7 +15,16 @@ const Article = ({ match }) => {
         (article) => article.id === Number(articleId)
     );
 
-    const { author, title, body, timeToRead, date, likes, comments } = article;
+    const {
+        author,
+        title,
+        body,
+        timeToRead,
+        date,
+        likes,
+        comments,
+        tags
+    } = article;
 
     return (
         <div className="container p-14">
@@ -33,7 +43,7 @@ const Article = ({ match }) => {
                     {date} - {timeToRead}
                 </span>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 text-xl article text-gray-800">
                 <p>
                     {body.split("\n").map((value, index) => {
                         return (
@@ -56,6 +66,20 @@ const Article = ({ match }) => {
                     <FaRegComment className="text-xl mr-1" />
                     {""}
                     <span>{comments}</span>
+                </div>
+            </div>
+            <div className="mb-5 flex text-gray-500">
+                <div>
+                    {tags.map((tag) => {
+                        return (
+                            <span
+                                key={tag}
+                                className="rounded-md bg-gray-200 p-2 mr-5"
+                            >
+                                <Link to={`/search?q=${tag}`}>{tag}</Link>
+                            </span>
+                        );
+                    })}
                 </div>
             </div>
         </div>

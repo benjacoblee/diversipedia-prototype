@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./tailwind.output.css";
+import "./App.css"
 import Header from "./Header";
 import Search from "./Search";
 import Article from "./Article";
