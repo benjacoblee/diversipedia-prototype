@@ -6,6 +6,7 @@ import {
     FaRegHandPeace,
     FaRegComment
 } from "react-icons/fa";
+
 import dummyArticles from "./dummy.json";
 
 const Article = ({ match }) => {
@@ -74,7 +75,7 @@ const Article = ({ match }) => {
                         return (
                             <span
                                 key={tag}
-                                className="rounded-md bg-gray-200 p-2 mr-5"
+                                className="rounded-md font-light bg-gray-200 p-2 mr-5"
                             >
                                 <Link to={`/search?q=${tag}`}>{tag}</Link>
                             </span>

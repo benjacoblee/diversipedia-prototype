@@ -14,7 +14,7 @@ const Header = () => {
                         </h1>
                     </Link>
                     <p className="text-base text-gray-700 leading-normal">
-                        Building people together
+                        Bringing people together
                     </p>
                 </div>
                 <div className="flex items-center">
@@ -23,7 +23,7 @@ const Header = () => {
                     </Link>
                     <BsBell className="text-2xl mr-5 text-gray-700" />
                     <img
-                        className="w-12 sm:hidden"
+                        className="w-12"
                         src="https://www.searchpng.com/wp-content/uploads/2019/02/Profile-ICon.png"
                         alt=""
                     />
