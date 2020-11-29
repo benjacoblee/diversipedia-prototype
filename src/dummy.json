@@ -8,7 +8,8 @@
         "timeToRead": "12 min read",
         "body": "I started thinking about writing about gender diversity in design when I noticed how Facebook, Google+, OkCupid, Tinder and a few others have adapted their registration forms to be more inclusive of trans and gender non-conforming (GNC) people. Why isn’t everyone doing this, I thought? Asking for a person’s gender is a loaded question and there can be many answers to it. It’s easy for us designers to just slap a gender question that says Male/Female in there — and make it mandatory — because our marketing department needs that data to sell stuff. There are indications that this not only risks losing engagement but also leads to false conclusions based on bad data. The J. Walter Thompson Innovation Group discovered that...",
         "tags": ["inclusion", "GNC", "gender", "social media"],
-        "likes": 234
+        "likes": 234,
+        "comments": 23
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "timeToRead": "4 min read",
         "body": "I can’t believe it's November already — time for the first round of parent-teacher conferences for Kindergarten. It brought me back to memories of last year’s conference. Pre-k 4 was so different. It was a true inclusion class run by a special education teacher and the classroom provided a lot of support and individual interventions for all of the students which set the bar of expectations high for me as a parent.",
         "tags": ["children", "special education", "inclusion"],
-        "likes": 52
+        "likes": 52,
+        "comments": 421
     },
     {
         "id": 3,
@@ -28,9 +30,10 @@
         "author": "Laura J. Murphy, MFA",
         "date": "Apr 26, 2017",
         "timeToRead": "14 min read",
-        "body": "I was born into being what I can only describe as an outsider. My life started in England, about an hour east of London in a small town called Braintree. As the youngest of three, I came along during a time of relative turmoil for the family. My father, a serviceman in the US Air Force met my mother, Ann, thirteen years earlier at a social mixer/dance in Hammersmith, London. The year was 1962. My mother was in nursing school at the time and Edward (my father) was stationed at a now-defunct Cold War base, RAF Ruislip in West London. They eventually married about one year after that dance, and my brother was born not long after that.",
+        "body": "I was born into being what I can only describe as an outsider.\n My life started in England, about an hour east of London in a small town called Braintree. As the youngest of three, I came along during a time of relative turmoil for the family. \n My father, a serviceman in the US Air Force met my mother, Ann, thirteen years earlier at a social mixer/dance in Hammersmith, London. The year was 1962. My mother was in nursing school at the time and Edward (my father) was stationed at a now-defunct Cold War base, RAF Ruislip in West London. They eventually married about one year after that dance, and my brother was born not long after that. \n We spent our formative years in a council house: the Goldingham Estates (aka “The Estates” as it was affectionately known) in Braintree. This place could be easily described as the analog to public housing in America. To get an idea of what Braintree is, picture a tough manufacturing town similar to a Rust Belt city in the US. The town served as a munitions manufacturing center during World War 2 and as such it was constantly the target of German bombs. The scars and fallout from that period were carried forward and remain in the culture as demonstrated by the tough nature of its people. For those that may not know, the county of Essex, where Braintree is, sometimes is mocked as being the underbelly of English class and as such it is the punchline of English jokes on low class. It’s a sort of running joke. Our neighborhood never worried too much about any of that, to the contrary we had pride. The neighborhood was tough and you had to show toughness, but it was also familial, and the cultural principles of the neighborhood bound us together.",
         "tags": ["inclusion", "outsiders"],
-        "likes": 23
+        "likes": 23,
+        "comments": 80
     },
     {
         "id": 4,
@@ -41,6 +44,7 @@
         "timeToRead": "3 min read",
         "body": "In the interest of transparency and mounting pressure from other companies doing it, we are very excited to release our Annual Diversity in Tech Report and share all the gains we’ve made in hiring “other people”..",
         "tags": ["diversity", "tech"],
-        "likes": 700
+        "likes": 700,
+        "comments": 301
     }
 ]

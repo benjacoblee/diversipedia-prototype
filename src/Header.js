@@ -8,9 +8,11 @@ const Header = () => {
         <nav className="w-full p-6 bg-gray-100  rounded-lg shadow-xl">
             <div className="flex flex-row justify-between items-center">
                 <div className="ml-6 pt-1">
-                    <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-                        Diversipedia
-                    </h1>
+                    <Link to="/">
+                        <h1 className="text-4xl font-bold text-gray-900 leading-tight">
+                            Diversipedia
+                        </h1>
+                    </Link>
                     <p className="text-base text-gray-700 leading-normal">
                         Building people together
                     </p>
