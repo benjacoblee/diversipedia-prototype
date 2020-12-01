@@ -8,14 +8,18 @@ const Item = ({ article }) => {
     return (
         <div className="border-b-2 border-gray-200 mb-5">
             <div className="mb-5">
-                <p className="text-green-500 text-xl font-semibold">{author}</p>
+                <p className="text-green-500 text-base lg:text-xl font-semibold">
+                    {author}
+                </p>
                 <p className="text-gray-500 font-medium">
                     {date} - {timeToRead}
                 </p>
             </div>
 
             <div className="mb-5">
-                <p className="text-3xl text-gray-800 font-bold">{title}</p>
+                <p className="text-2xl lg:text-3xl text-gray-800 font-bold">
+                    {title}
+                </p>
             </div>
             <div className="mb-5">
                 <img
@@ -24,7 +28,9 @@ const Item = ({ article }) => {
                 />
             </div>
             <div>
-                <p className="text-gray-800">{body.substring(0, 300)}...</p>
+                <p className="text-gray-800 article">
+                    {body.substring(0, 300)}...
+                </p>
             </div>
             <div className="my-5 text-gray-500">
                 <Link to={`/articles/${id}`}>Read more...</Link>

@@ -36,20 +36,22 @@ const Search = ({ history }) => {
 
     const displayForm = () => {
         return (
-            <form onSubmit={handleSubmit}>
-                <input
-                    onChange={handleChange}
-                    className="border-b-2 border-gray-200 text-5xl text-gray-600 outline-none"
-                    placeholder="Search Diversipedia"
-                    type="text"
-                />
-            </form>
+            <div className="w-full font-light text-xl mb-5 lg:mb-20 tracking-wide">
+                <form onSubmit={handleSubmit}>
+                    <input
+                        onChange={handleChange}
+                        className="border-b-2 border-gray-200 text-2xl lg:text-5xl text-gray-600 outline-none"
+                        placeholder="Search Diversipedia"
+                        type="text"
+                    />
+                </form>
+            </div>
         );
     };
 
     const displayTaggedIn = () => {
         return (
-            <div className="mt-5 font-light text-xl mb-20 tracking-wide">
+            <div className="w-full font-light text-xl mb-5 lg:mb-20 tracking-wide">
                 TAGGED IN{" "}
                 <span className="font-light font-semibold text-2xl">
                     {tagParams.replace(/^\w/, (c) => c.toUpperCase())}
@@ -59,10 +61,12 @@ const Search = ({ history }) => {
     };
 
     return (
-        <div className="container p-14">
+        <div className="container">
             {isSearch ? displayForm() : displayTaggedIn()}
             {articles.length > 0 && isSearch ? (
-                <div className="mt-5 font-bold text-xl mb-20">Stories</div>
+                <div className="mt-5 font-bold text-xl mb-5 lg:mb-20">
+                    Stories
+                </div>
             ) : null}
 
             {articles.map((article) => (

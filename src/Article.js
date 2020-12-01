@@ -31,7 +31,7 @@ const Article = ({ match }) => {
 
     return (
         <Fragment>
-            <div className="text-4xl font-bold text-gray-800 mb-10">
+            <div className="text-3xl article lg:text-4xl lg:font-bold text-gray-800 mb-5 lg:mb-10">
                 {title}
             </div>
             <div className="flex mb-5">
@@ -39,14 +39,14 @@ const Article = ({ match }) => {
                 <FaRegBookmark className="text-2xl mr-5 text-gray-500" />
             </div>
             <div className="mb-5">
-                <span className="text-green-500 text-xl font-semibold">
+                <span className="text-green-500 text-sm block lg:inline lg:text-xl font-base  lg:font-semibold">
                     {author}
                 </span>
-                <span className="ml-3 text-gray-500 font-medium">
+                <span className="lg:ml-3 text-gray-500 text-sm lg:font-medium">
                     {date} - {timeToRead}
                 </span>
             </div>
-            <div className="mb-5 text-xl article text-gray-800">
+            <div className="mb-5 text-base leading-relaxed text-lg lg:text-xl article text-gray-800">
                 <p>
                     {body.split("\n").map((value, index) => {
                         return (
@@ -77,7 +77,7 @@ const Article = ({ match }) => {
                         return (
                             <span
                                 key={tag}
-                                className="rounded-md font-light bg-gray-200 p-2 mr-5"
+                                className="rounded-md inline-block font-light bg-gray-200 p-2 mr-5 mb-5"
                             >
                                 <Link to={`/tagged/${tag}`}>{tag}</Link>
                             </span>

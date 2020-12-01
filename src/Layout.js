@@ -5,7 +5,9 @@ const Layout = (props) => {
     return (
         <Fragment>
             <Header />
-            <div className="container p-14 centered">{props.children}</div>
+            <div className="container p-4 w-full lg:p-14 centered">
+                {props.children}
+            </div>
         </Fragment>
     );
 };
