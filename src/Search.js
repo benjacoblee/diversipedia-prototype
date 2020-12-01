@@ -5,14 +5,24 @@ import dummyArticles from "./dummy.json";
 const Search = ({ history }) => {
     const [data, setData] = useState("");
     const [articles, setArticles] = useState([]);
+    const searchParams = history.location.search.split("=")[1];
+    const tagParams = history.location.pathname.split("/")[
+        history.location.pathname.split("/").length - 1
+    ];
+    const isSearch = history.location.pathname === "/search";
 
     useEffect(() => {
-        const searchParams = history.location.search.split("=")[1];
-
-        const filteredArticles = dummyArticles.filter((articles) =>
-            articles.tags.includes(searchParams)
-        );
-        setArticles(() => [...filteredArticles]);
+        if (searchParams) {
+            const filteredArticles = dummyArticles.filter((articles) =>
+                articles.tags.includes(searchParams)
+            );
+            setArticles(() => [...filteredArticles]);
+        } else {
+            const filteredArticles = dummyArticles.filter((articles) =>
+                articles.tags.includes(tagParams)
+            );
+            setArticles(() => [...filteredArticles]);
+        }
     }, [history.location.search]);
 
     const handleSubmit = (e) => {
@@ -24,8 +34,8 @@ const Search = ({ history }) => {
         setData(() => e.target.value);
     };
 
-    return (
-        <div className="container p-14">
+    const displayForm = () => {
+        return (
             <form onSubmit={handleSubmit}>
                 <input
                     onChange={handleChange}
@@ -34,13 +44,29 @@ const Search = ({ history }) => {
                     type="text"
                 />
             </form>
+        );
+    };
 
-            {articles.length > 0 ? (
+    const displayTaggedIn = () => {
+        return (
+            <div className="mt-5 font-light text-xl mb-20 tracking-wide">
+                TAGGED IN{" "}
+                <span className="font-light font-semibold text-2xl">
+                    {tagParams.replace(/^\w/, (c) => c.toUpperCase())}
+                </span>
+            </div>
+        );
+    };
+
+    return (
+        <div className="container p-14">
+            {isSearch ? displayForm() : displayTaggedIn()}
+            {articles.length > 0 && isSearch ? (
                 <div className="mt-5 font-bold text-xl mb-20">Stories</div>
             ) : null}
 
             {articles.map((article) => (
-                <Item key={article.id} article={article} />
+                <Item key={article.id} article={article} history={history} />
             ))}
         </div>
     );

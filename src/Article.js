@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
 import {
     FaRegShareSquare,
@@ -10,6 +10,8 @@ import {
 import dummyArticles from "./dummy.json";
 
 const Article = ({ match }) => {
+    useEffect(() => window.scrollTo(0, 0));
+
     const { id: articleId } = match.params;
 
     const article = dummyArticles.find(
@@ -28,7 +30,7 @@ const Article = ({ match }) => {
     } = article;
 
     return (
-        <div className="container p-14">
+        <Fragment>
             <div className="text-4xl font-bold text-gray-800 mb-10">
                 {title}
             </div>
@@ -77,13 +79,13 @@ const Article = ({ match }) => {
                                 key={tag}
                                 className="rounded-md font-light bg-gray-200 p-2 mr-5"
                             >
-                                <Link to={`/search?q=${tag}`}>{tag}</Link>
+                                <Link to={`/tagged/${tag}`}>{tag}</Link>
                             </span>
                         );
                     })}
                 </div>
             </div>
-        </div>
+        </Fragment>
     );
 };
 

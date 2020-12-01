@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./tailwind.output.css";
-import "./App.css"
-import Header from "./Header";
+import "./App.css";
+import Home from "./Home";
 import Search from "./Search";
 import Article from "./Article";
+import Layout from "./Layout";
 
 function App() {
     return (
         <Router>
-            <Route path="/" component={Header} />
-            <Route path="/search" component={Search} />
-            {<Route path="/articles/:id" component={Article} />}
+            <Layout>
+                <Route exact path="/" component={Home} />
+                <Route path="/search" component={Search} />
+                <Route path="/tagged" component={Search} />
+                <Route path="/articles/:id" component={Article} />
+            </Layout>
         </Router>
     );
 }

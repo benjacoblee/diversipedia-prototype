@@ -1,3 +1,7 @@
 .article {
     font-family: "Georgia";
 }
+
+.centered {
+    margin: 0 auto;
+}

@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import { FaRegHandPeace } from "react-icons/fa";
-import ClipLoader from "react-spinners/ClipLoader";
 
 const Item = ({ article }) => {
-    const [loading, setLoading] = useState(true);
     const { id, author, title, body, timeToRead, date, likes } = article;
+
     return (
         <div className="border-b-2 border-gray-200 mb-5">
             <div className="mb-5">
@@ -20,19 +19,14 @@ const Item = ({ article }) => {
             </div>
             <div className="mb-5">
                 <img
-                    className={`${loading ? "hidden" : "block"}`}
-                    onLoad={() => {
-                        setLoading(false);
-                    }}
                     src="https://source.unsplash.com/600x180/?peace,empathy"
                     alt=""
                 />
-                <ClipLoader loading={loading} />
             </div>
             <div>
                 <p className="text-gray-800">{body.substring(0, 300)}...</p>
             </div>
-            <div className="my-5 text-gray-400">
+            <div className="my-5 text-gray-500">
                 <Link to={`/articles/${id}`}>Read more...</Link>
             </div>
             <div className="mb-5 flex text-gray-500">
